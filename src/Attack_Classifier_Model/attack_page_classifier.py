@@ -4,7 +4,7 @@ from Attack_Classifier_Model.helper_functions import *
 
 
 def attak_classifer():
-    data = pd.read_csv('../data/preprocessed/random_sample.csv')
+    data = pd.read_csv('./data/preprocessed/random_sample.csv')
     st.title('🛡️ Attack Classification Demo')
     st.markdown("""
     Welcome to the Attack Classification Demo! This tool allows you to explore and classify different types of network attacks using a pre-trained model. Select an attack sample from the dropdown menu below and see the model's prediction.
