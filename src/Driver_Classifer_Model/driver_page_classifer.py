@@ -5,7 +5,7 @@ from Driver_Classifer_Model.helper_functions import *
 
 def driver_model():
 
-    test = pd.read_csv("../data/preprocessed/test_preprocessed.csv")
+    test = pd.read_csv("./data/preprocessed/test_preprocessed.csv")
 
     st.title('🚗🔒 Driver Classifier Model')
 
