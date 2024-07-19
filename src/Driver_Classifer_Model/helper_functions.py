@@ -8,7 +8,7 @@ def driver_dataframe(df, driver):
     driver_df = df[df['PathOrder'] == 1]
     driver_df = driver_df[driver_df['Class'] == driver]
     driver_df.drop(columns=['Class', 'PathOrder', 'Unnamed: 0'], inplace=True)
-    scaler = pickle.load(open('../models/scaler.pkl', 'rb'))
+    scaler = pickle.load(open('./models/scaler.pkl', 'rb'))
     Scaled_driver_df = scaler.transform(driver_df)
     driver_df = pd.DataFrame(Scaled_driver_df, columns=driver_df.columns)
     return driver_df
