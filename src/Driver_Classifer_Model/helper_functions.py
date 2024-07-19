@@ -73,7 +73,7 @@ class TimeSeriesDataset(Dataset):
 # Function to load model and encoder
 def load_model_and_encoder(input_dim, latent_dim, sequence_length):
     model = ComplexTimeSeriesAutoencoder(input_dim, latent_dim, sequence_length)
-    model.load_state_dict(torch.load('../models/complex_time_series_autoencoder_rolling_features.pkl', map_location=torch.device('cpu')))
+    model.load_state_dict(torch.load('./models/complex_time_series_autoencoder_rolling_features.pkl', map_location=torch.device('cpu')))
     return model
 
 # Function to predict loss
