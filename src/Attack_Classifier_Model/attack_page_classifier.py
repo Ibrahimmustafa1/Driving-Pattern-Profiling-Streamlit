@@ -30,11 +30,7 @@ def attak_classifer():
         st.subheader('True Attack Type:')
         st.info(f'{sample["flag"]}')
 
-    risk_level = risk_levels[prediction]
-    if risk_level == 'High':
-        st.error(f'Risk Level: {risk_level}')
-    else:
-        st.success(f'Risk Level: {risk_level}')
+
 
     if st.button("Back to Home"):
         st.session_state.page = 'home'
