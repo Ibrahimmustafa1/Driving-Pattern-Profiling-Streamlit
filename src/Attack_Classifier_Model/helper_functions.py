@@ -13,10 +13,10 @@ def predict_results(model, encoder, sample):
 
 
 
-with open('../models/label_encoder.pkl', 'rb') as file:
+with open('./models/label_encoder.pkl', 'rb') as file:
     encoder = pickle.load(file)
 
-with open('../models/model.pkl', 'rb') as file:
+with open('./models/model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 
